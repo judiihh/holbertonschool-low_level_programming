@@ -1,9 +1,7 @@
-/* main.h */
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Function declarations (prototypes) */
-void printHello();
+int _putchar(char c);  /* Prototype for _putchar */
 
-#endif  /* MAIN_H */
+#endif /* MAIN_H */
 
