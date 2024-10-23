@@ -1,9 +1,9 @@
-// main.h
+/* main.h */
 #ifndef MAIN_H
 #define MAIN_H
 
-// Function declarations (prototypes)
+/* Function declarations (prototypes) */
 void printHello();
 
-#endif  // MAIN_H
+#endif  /* MAIN_H */
 
