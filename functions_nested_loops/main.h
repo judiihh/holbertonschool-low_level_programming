@@ -11,5 +11,6 @@ int _abs(int); /* Prototype for int _abs(int) */
 int print_last_digit(int n); /* Prototype for print_last_digit(int) */
 void jack_bauer(void); /* Prototype for void jack_bauer(void) */
 void times_table(void); /* Prototype for void times_table(void) */
+int add(int, int); /* Prototype for int add(int, int) */
 
 #endif /* MAIN_H */
