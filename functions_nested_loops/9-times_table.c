@@ -25,14 +25,14 @@ void times_table(void)
 			}
 			else
 			{
-				if (row != 0)
+				if (col != 0)
 				{
 					_putchar(44);
 					_putchar(32);
 					_putchar(32);
 				}
+				_putchar('0' + result);
 			}
-			_putchar(0 + result);
 		}
 
 	_putchar('\n');
