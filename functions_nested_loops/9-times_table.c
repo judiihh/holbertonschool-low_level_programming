@@ -12,16 +12,29 @@ void times_table(void)
 	{
 		for (col = 0; col <= 9; col++)
 		{
-		result = row * col;
-
-		if (col != 0)
-			putchar(','), putchar(' ');
-		if (result < 10 && col != 0)
-			putchar(' ');
-		if (result >= 10)
-			putchar((result / 10) + '0');
-		putchar((result % 10) + '0');
+			result = row * col;
+			if (result > 9)
+			{
+				if (col != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+				}
+					_putchar('0' + result / 10);
+					_putchar('0' + result % 10);
+			}
+			else
+			{
+				if (row != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+			}
+			_putchar(0 + result);
 		}
-	putchar('\n');
+
+	_putchar('\n');
 	}
 }
