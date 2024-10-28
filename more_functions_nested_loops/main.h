@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int _putchar(int c);
 int _isupper(int c); /* Prototype for _isupper (0) */
 int _isdigit(int c);
 int mul(int a, int b);
