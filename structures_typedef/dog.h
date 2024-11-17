@@ -2,16 +2,16 @@
 #define DOG_H
 
 /**
- * struct dog - A new type representing a dog.
- * @name: Pointer to the dog's name (string).
- * @age: Float representing the dog's age.
- * @owner: Pointer to the dog's owner (string).
+ * struct dog - a new type representing a dog
+ * @name: pointer to the dog's name
+ * @age: float representing the dog's age
+ * @owner: pointer to the dog's owner
  */
 struct dog
 {
   char *name;
   float age;
-  char *owner
+  char *owner;
 };
 
-#endif /* DOG_H */
+#endif
