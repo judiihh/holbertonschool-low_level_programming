@@ -1,22 +1,17 @@
-#include <stdio.h>
-#include "dog.h"
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * main - entry point to test struct dog
- *
- * Return: always 0 (succes)
+ * struct dog - A new type representing a dog.
+ * @name: Pointer to the dog's name (string).
+ * @age: Float representing the dog's age.
+ * @owner: Pointer to the dog's owner (string).
  */
-int main (void)
+struct dog
 {
-  struct dog my_dog;
+  char *name;
+  float age;
+  char *owner
+};
 
-  my_dog.name = "Buddy";
-  my_dog.age = 3.5;
-  my_dog.owner = "Alice";
-
-  printf("Dog's Name: %s\n", my_dog.name);
-  printf("Dog's Age: %.1f\n", my_dog.age);
-  printf("Dog's Owner: %s\n", my_dog.owner);
-
-  return (0);
-}
+#endif /* DOG_H */
