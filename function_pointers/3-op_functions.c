@@ -1,11 +1,16 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * op_add - adds two integers
  * @a: the first integer
  * @b: the second integer
  *
- * return: the sum of a and b
+ * Description: this function takes two integers as input
+ * and returns their sum.
+ *
+ * Return: the sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -13,11 +18,14 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - substracts two integers
+ * op_sub - subtracts two integers
  * @a: the first integer
  * @b: the second integer
  *
- * return: the difference of a and b
+ * Description: this function takes two integers as input and
+ * returns the result of subtracting b from a.
+ *
+ * Return: the difference of a and b
  */
 int op_sub(int a, int b)
 {
@@ -25,11 +33,14 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - Multiplies two integers
- * @a: The first integer
- * @b: The second integer
+ * op_mul - multiplies two integers
+ * @a: the first integer
+ * @b: the second integer
  *
- * Return: The product of a and b
+ * Description: this function takes two integers as input and
+ * returns their product.
+ *
+ * Return: the product of a and b.
  */
 int op_mul(int a, int b)
 {
@@ -37,12 +48,16 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - Divides two integers
- * @a: The numerator
- * @b: The denominator
+ * op_div - divides two integers
+ * @a: the numerator
+ * @b: the denominator
  *
- * Return: The quotient of a and b
- * Exits with 100 if b is 0
+ * Description: this function takes two integers as input and
+ * returns the result of dividing a by b. If b is 0,
+ * the function prints an error message and exits
+ * with status 100.
+ *
+ * Return: the quotient of a divided by b.
  */
 int op_div(int a, int b)
 {
@@ -55,12 +70,16 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - Computes the modulo of two integers
- * @a: The numerator
- * @b: The denominator
+ * op_mod - computes the remainder of the division of two integers
+ * @a: the numerator
+ * @b: the denominator
  *
- * Return: The remainder of a divided by b
- * Exits with 100 if b is 0
+ * Description: this function takes two integers as input and
+ * returns the remainder of a divided by b. If b is 0,
+ * the function prints an error message and exits
+ * with status 100.
+ *
+ * Return: the remainder of a divided by b.
  */
 int op_mod(int a, int b)
 {
