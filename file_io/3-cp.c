@@ -45,8 +45,8 @@ int main(int argc, char *argv[])
 		error_exit(98, "Error: Can't read from file", argv[1]);
 	}
 	if (close(fd_from) == -1)
-		error_exit(100, "Error: Can't close fd", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from), exit(100);
 	if (close(fd_to) == -1)
-		error_exit(100, "Error: Can't close fd", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to), exit(100);
 	return (0);
 }
